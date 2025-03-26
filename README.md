@@ -1,64 +1,103 @@
-# 🤖 AI Chatbot Template
+# AI Poet Chatbot 🎭
 
-Welcome to the AI Chatbot Template! This flexible, full-stack starter kit is designed for students of Halim Madi's course to build and deploy custom AI chatbots. While the included example focuses on poetry, the framework can support a wide range of use cases—from wellness bots and creative assistants to educational tutors and productivity companions.
+An interactive chatbot trained on the poetry of [Halim Madi](https://www.halimmadi.com). This AI-powered poetry companion brings Halim's unique poetic voice to life through natural conversation.
 
----
+## ✨ Features
 
-## 🎯 What You'll Build
+- 🤖 Chat with an AI trained on Halim Madi's poetry
+- 🎙️ Voice input support with speech-to-text
+- 🔊 Text-to-speech for AI responses
+- 💬 Real-time message streaming
+- 📱 Responsive design
+- ⚡ Server-side API handling for security
 
-A full-featured AI chatbot that can:
-- Engage in natural or themed conversations (e.g. poetic, informative, supportive)
-- Accept voice input via microphone
-- Respond with synthesized speech
-- Stream responses in real-time
-- Deploy seamlessly to production
+## 🛠️ Technology Stack
 
----
+- **Frontend**: Next.js 14, React 18, TypeScript
+- **Styling**: Tailwind CSS
+- **AI Integration**: OpenAI API
+  - GPT-3.5 Turbo (Fine-tuned model)
+  - Whisper API for speech-to-text
+  - TTS-1 for text-to-speech
+- **Icons**: Lucide React
 
-## 🛠️ Technical Features
+## 🚀 Getting Started
 
-- **Modern Stack**: Next.js 14, React 18, TypeScript
-- **Beautiful UI**: Tailwind CSS with responsive design
-- **AI Integration**: OpenAI API (GPT, Whisper, TTS)
-- **Security**: Server-side API handling for key protection
-- **Production-Ready**: Easy deployment to Vercel
+### Prerequisites
 
----
+- Node.js 18.0 or later
+- OpenAI API key
 
-## 📚 Course Integration
+### Environment Setup
 
-This template is ideal for students who want to:
-1. Learn AI integration in web applications
-2. Practice modern web development with React & Next.js
-3. Experiment with creative or practical chatbot use cases
-4. Build and launch polished, real-world applications
+1. Clone the repository
+2. Create a `.env` file in the root directory with:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key
+   NEXT_PUBLIC_OPENAI_API_KEY=your_openai_api_key
+   ```
 
----
+### Installation
 
-## 🔍 Code Structure
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The application will be available at `http://localhost:3000`
+
+## 🌟 Usage
+
+1. **Text Chat**: Type your message in the input field and press send
+2. **Voice Input**: 
+   - Click the microphone icon to start recording
+   - Speak your message
+   - Click the stop button to end recording
+3. **Text-to-Speech**: Click the speaker icon on any AI response to hear it spoken
+
+## 🔒 Security Features
+
+- Server-side API route for OpenAI chat completions
+- Secure environment variable handling
+- Client-side API key limited to speech features only
+
+## 📦 Project Structure
 
 ```
-src/
-├── app/
-│   ├── api/
-│   │   └── chat/
-│   │       └── route.ts     # Server-side API for OpenAI chat
-│   ├── page.tsx             # Main chat interface
-│   ├── layout.tsx           # App layout
-│   └── globals.css          # Global styles
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── chat/
+│   │   │       └── route.ts    # API endpoint for chat
+│   │   ├── page.tsx            # Main chat interface
+│   │   ├── layout.tsx          # Root layout
+│   │   └── globals.css         # Global styles
+│   └── ...
+├── public/
+├── .env
+├── next.config.mjs
+├── package.json
+└── ...
 ```
-
----
 
 ## 🚀 Deployment
-- Push to GitHub
-- Connect to Vercel
-- Add environment variables in Vercel
-- Deploy and share your bot!
 
----
+The application can be deployed on Vercel:
 
-## 📜 License
-MIT License – Feel free to use and adapt this template for your projects or experiments!
+1. Push your code to a Git repository
+2. Import the project in Vercel
+3. Add environment variables:
+   - `OPENAI_API_KEY` (for server-side API calls)
+   - `NEXT_PUBLIC_OPENAI_API_KEY` (for client-side speech features)
+4. Deploy
 
-Created with 💙 by Halim Madi (www.halimmadi.com) for students, builders, and creative technologists.
+## 📝 License
+
+MIT
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
