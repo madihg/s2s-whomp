@@ -1,4 +1,4 @@
-# 🎭 AI Chatbot Template (with Poetry Example)
+# 🤖 AI Chatbot Template
 
 Welcome to the AI Chatbot Template! This flexible, full-stack starter kit is designed for students of Halim Madi's course to build and deploy custom AI chatbots. While the included example focuses on poetry, the framework can support a wide range of use cases—from wellness bots and creative assistants to educational tutors and productivity companions.
 
